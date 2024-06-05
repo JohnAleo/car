@@ -1,7 +1,8 @@
 import React from 'react'
 import { campcar } from '../mock/mockdata';
 import { Middle,CarContainer, Carwrapper,Button,Buttonwrapper,Item,CarItemwrapper ,Cost,
-Application,Brand,Company,License,Travelers,Location,Line,Line1,Column,Itemright,Itemleft,Center } from '../style/motorstyle';
+Application,Brand,Company,License,Travelers,Location,Line,Line1,Column,Itemright,Itemleft,Center,Line1wrapper, 
+Inputwrapper} from '../style/motorstyle';
 import star from '../assets/star.png';
 import  NavbarComponent from '../navbar/navbar';
 const MotorComponent= () => {
@@ -42,9 +43,9 @@ const MotorComponent= () => {
         <Company>
         <p>Company</p>
         <Line></Line>
-        <div>
+        <Inputwrapper>
             <input type="checkbox" /><label>Escape</label>
-        </div>
+        </Inputwrapper>
         <div>
             <input type="checkbox" /><label>Aidal</label>
         </div>
@@ -106,8 +107,9 @@ const MotorComponent= () => {
                 <option></option>
             </select>
         </Itemright>
+        
     </Item>
-    <Center><Line1></Line1></Center>
+    <Line1><div></div></Line1>
     <CarContainer>
         {data.map((value, key)=> {
             return(

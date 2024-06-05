@@ -212,6 +212,7 @@ export const campcar = {
         date: "22년 03월",
         company: " 영남캠핑카",
         location: "경상권",
+        rate:4.5,
       },
     },
     {

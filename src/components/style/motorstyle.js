@@ -4,7 +4,7 @@ export const Middle=styled.div`
 display:flex;
 justify-content:center; 
 background:#fafafa;
-padding:30px;`
+//padding:30px;`
 export const CarContainer = styled.div`
 display:grid;
 grid-template-columns:repeat(4, 1fr);
@@ -65,6 +65,7 @@ export const Item= styled.div`
 display:flex;
 //  border: 1px solid black;
 justify-content: center;
+align-items: center;
 
 `
 export const Itemright=styled.div`
@@ -119,7 +120,8 @@ line-height: 100%;
 export const CarItemwrapper=styled.div`
 display:flex;
 flex:4;
-flex-direction:column;`
+flex-direction:column;
+justify-content:center;`
 
 export const Application =styled.div`
 display:flex;
@@ -140,7 +142,12 @@ background: rgba(55, 55, 55, 0.30);
 width: 1080px;
 display:flex;
 justify-content:center;
-margin-top:10px;`
+
+//margin-top:10px;`
+
+export const Line1wrapper=styled.div`
+display:flex;
+justify-content:center;`
 
 export const Center =styled.div`
 display:flex;
@@ -218,7 +225,7 @@ background: #FFF;
 export const Company=styled.div`
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: start;
 gap: 10px;
 p{
 color: #000;
@@ -228,6 +235,12 @@ font-style: normal;
 font-weight: 600;
 line-height: 100%; /* 18px */
 }
+
+
+`
+export const Inputwrapper=styled.div`
+display:flex;
+align-items:center;
 input{
 width: 22px;
 height: 22px;
@@ -235,8 +248,8 @@ flex-shrink: 0;
 border-radius: 5px;
 border: 1px solid #666;
 background: #FFF;
-}
-`
+}`
+
 export const License=styled.div`
 display:flex;
 flex-direction: column;
